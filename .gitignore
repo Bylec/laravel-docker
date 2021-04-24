@@ -3,7 +3,9 @@
 /public/storage
 /storage/*.key
 /vendor
-/docker-compose
+/docker-compose/mysql
+/docker-compose/mongo
+/docker-compose/redis
 .env
 .env.backup
 .phpunit.result.cache
