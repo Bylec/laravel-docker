@@ -38,14 +38,10 @@ class CreateUser extends Command
      */
     public function handle()
     {
-//        User::create([
-//            "name" => "tomasz",
-//            "email" => "tomkunach@gmail.com",
-//            "password" => "eloelo520"
-//        ]);
-
-        \Log::debug(__METHOD__);
-        cache()->set('name', 'Wai');
-        \Log::debug(\Illuminate\Support\Facades\Cache::get('name'));
+        User::create([
+            "name" => "tomasz",
+            "email" => "tomkunach@gmail.com",
+            "password" => "eloelo520"
+        ]);
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\Controllers;
 
-class TestController
+class TestController extends Controller
 {
     public function test()
     {
