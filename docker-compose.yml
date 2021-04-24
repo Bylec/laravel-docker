@@ -7,9 +7,6 @@ networks:
 services:
   app:
     build:
-      args:
-        user: tomasz
-        uid: 1000
       context: ./
       dockerfile: Dockerfile
     image: bylec/laravel-test
@@ -34,7 +31,6 @@ services:
     ports:
       - 3307:3306
     volumes:
-      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
       - ./docker-compose/mysql/data:/var/lib/mysql
     networks:
       - laravel-test-network
